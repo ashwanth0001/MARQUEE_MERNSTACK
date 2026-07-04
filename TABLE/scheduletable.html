@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,
+        td,
+        th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #csc{
+            background-color:rgb(242, 141, 255);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Table</title>
+</head>
+<body>
+    <h2>Assignment</h2>
+    <hr style="border: 2px solid black;">
+    <h2>Objectives</h2>
+    <ul>
+        <li> Learn the meanings of the following term:</li>
+        HTML table
+        <li>Learn to create an HTML table using TR, TD, and TH tags.</li>
+        <li>Learn to use ROWSPAN and COLSPAN attributes.</li>
+    </ul>
+    <hr style=" border: 2px solid black;">
+    <h2>Creating HTML Tables</h2>
+
+    <p>This assignment can be completed individually. Your assignment is to create an HTML table.</p>
+    <br>
+    <br>
+    <table style="border: 4px solid black;" >
+        <tr>
+            <th colspan="7" style="color: rgb(185, 27, 213);">Jan's Spring Term 2006 Afternoon Schedule</th>
+        </tr>
+        <tr>
+            <td>Timings</td>
+            <td>Monday</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thursday</td>
+            <td>Friday</td>
+            <td>Saturday</td>
+        </tr>
+        <tr>
+            <td>1:00</td>
+            <td rowspan="2" style="background-color: bisque;">Office</td>
+            <td></td>
+            <td rowspan="2" style="background-color: bisque;">Office</td>
+            <td rowspan="8" style="background-color: bisque;">Office <br>Hours<br> by<br> Appt</td>
+            <td rowspan="2" style="background-color: bisque;">Office</td>
+            <td rowspan="8" style="background-color:lightskyblue;">Holiday</td>
+        </tr>
+        <tr>
+            <td>1:30</td>
+            <td roWspan="2" style="background-color:lightgray;">Dept Meeting</td>
+        </tr>
+        <tr>
+            <td>2:00</td>
+            <td rowspan="3" style="background-color:chartreuse;">MAT 108</td>
+            <td rowspan="3" style="background-color:chartreuse;">MAT 108</td>
+            <td rowspan="3" style="background-color:chartreuse;">MAT 108</td>
+        </tr>
+        <tr>
+            <td>2:30</td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>3:00</td>
+            <td rowspan="3" style="background-color:lightgray">EC Meeting</td>
+        </tr>
+        <tr>
+            <td>3:30</td>
+            <td rowspan="3" id="csc">CSC 205</td>
+            <td rowspan="3" id="csc">CSC 205</td>
+            <td rowspan="3" id="csc">CSC 205</td>
+        </tr>
+        <tr>
+            <td>4:00</td>
+        </tr>
+        <tr>
+            <td>4:30</td>
+        </tr>
+    </table>
+</body>
+</html>
